@@ -24,9 +24,7 @@ You'll create a Dispatcher and Receiver, initialed with a specified protocol. Li
 ```
     # replace `PlaybackProtocol` here with whatever protocl you are using!
     let playbackDisatch: MRSDispatcher<PlaybackProtocol> = MRSDispatcher()
-    var playbackReciever: PlaybackProtocol {
-        return playbackDisatch.targetReciever
-    }
+    let playbackReciever: PlaybackProtocol = playbackDisatch.targetReciever
 ```
 
 3. add a listener! (as many listeners as you want!)
