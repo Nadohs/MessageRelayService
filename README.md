@@ -23,7 +23,7 @@ You'll create a Dispatcher and Receiver, initialed with a specified protocol. Li
 2. setup your dispatcher! (and receiver)
 ```
     # replace `PlaybackProtocol` here with whatever protocl you are using!
-    let playbackDisatch: PWKDispatcher<PlaybackProtocol> = PWKDispatcher()
+    let playbackDisatch: MRSDispatcher<PlaybackProtocol> = MRSDispatcher()
     var playbackReciever: PlaybackProtocol {
         return playbackDisatch.targetReciever
     }
@@ -60,4 +60,4 @@ func myTimeHasChanged(newTime: Double) {
 }
 ```
 
-##🎉🎉🎉Thats all you've done it! Congratulations! 🎉🎉🎉
+## 🎉🎉🎉Thats all you've done it! Congratulations! 🎉🎉🎉
