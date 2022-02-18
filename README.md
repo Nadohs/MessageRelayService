@@ -1,4 +1,4 @@
-# Message Relay Service (Mrs.)
+# Message Relay Service (MRS.)
 
 Message Relay Service for Swift/Obj-C. This is a messaging service that utilizes protocols to subscribe/publish through a dispatch and receiver. This can be useful in apps designed around plug-in pattern, and others. 
 
