@@ -1,12 +1,12 @@
 //
-//  ProtoWireKitSwiftTests.swift
-//  ProtoWireKitSwiftTests
+//  MessageRelayServiceSwiftTests.swift
+//  MessageRelayServiceSwiftTests
 //
-//  Created by Richard Fox on 1/5/22.
+//  Created by Richard Fox on 2/18/22.
 //
 
 import XCTest
-import ProtoWireKit
+import MessageRelayService
 
 @objc protocol Sums {
     var total: Int {get}
@@ -15,7 +15,7 @@ import ProtoWireKit
 
 class AddOnly: Sums {
     var total = 0
-    
+
     func mathWith(target: Int) {
         total += target;
     }
@@ -23,7 +23,7 @@ class AddOnly: Sums {
 
 class SubOnly: NSObject, Sums {
     var total = 0
-    
+
     func mathWith(target: Int) {
         total -= target
     }
@@ -36,10 +36,10 @@ class MultiOnly: NSObject, Sums {
     }
 }
 
-class ProtoWireKitSwiftTests: XCTestCase {
-    
-    func testProtoWireFirst() {
-        let dispatcher: PWKDispatcher<Sums> = PWKDispatcher()
+class MessageRelayServiceSwiftTests: XCTestCase {
+
+    func testDispatchAndReciever() {
+        let dispatcher: MRSDispatcher<Sums> = MRSDispatcher()
         let subs = SubOnly()
         let mults = MultiOnly()
         mults.total = 2

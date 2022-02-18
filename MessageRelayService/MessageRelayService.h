@@ -15,4 +15,4 @@ FOUNDATION_EXPORT const unsigned char ProtoWireKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ProtoWireKit/PublicHeader.h>
 
-#import <ProtoWireKit/PWKDispatcher.h>
+#import <MessageRelayService/MRSDispatcher.h>

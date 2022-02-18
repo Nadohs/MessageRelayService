@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BDC4E73227BFECBE008FE807 /* MessageRelayServiceSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4E73127BFECBE008FE807 /* MessageRelayServiceSwiftTests.swift */; };
+		BDC4E73327BFECBE008FE807 /* MessageRelayService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDEA30FA27860A530001CE9C /* MessageRelayService.framework */; };
 		BDEA30FF27860A530001CE9C /* ProtoWireKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = BDEA30FE27860A530001CE9C /* ProtoWireKit.docc */; };
-		BDEA310B27860A530001CE9C /* ProtoWireKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BDEA30FD27860A530001CE9C /* ProtoWireKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDEA311B27860ACC0001CE9C /* ProtoWireKitSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEA311A27860ACC0001CE9C /* ProtoWireKitSwiftTests.swift */; };
-		BDEA311C27860ACC0001CE9C /* ProtoWireKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDEA30FA27860A530001CE9C /* ProtoWireKit.framework */; };
-		BDEA312627860DA30001CE9C /* PWKDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = BDEA312427860DA30001CE9C /* PWKDispatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDEA312727860DA30001CE9C /* PWKDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = BDEA312527860DA30001CE9C /* PWKDispatcher.m */; };
+		BDEA310B27860A530001CE9C /* MessageRelayService.h in Headers */ = {isa = PBXBuildFile; fileRef = BDEA30FD27860A530001CE9C /* MessageRelayService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDEA311C27860ACC0001CE9C /* MessageRelayService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDEA30FA27860A530001CE9C /* MessageRelayService.framework */; };
+		BDEA312627860DA30001CE9C /* MRSDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = BDEA312427860DA30001CE9C /* MRSDispatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDEA312727860DA30001CE9C /* MRSDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = BDEA312527860DA30001CE9C /* MRSDispatcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BDC4E73427BFECBE008FE807 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDEA30F127860A530001CE9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDEA30F927860A530001CE9C;
+			remoteInfo = MessageRelayService;
+		};
 		BDEA311D27860ACC0001CE9C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BDEA30F127860A530001CE9C /* Project object */;
@@ -26,16 +34,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BDEA30FA27860A530001CE9C /* ProtoWireKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProtoWireKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDEA30FD27860A530001CE9C /* ProtoWireKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtoWireKit.h; sourceTree = "<group>"; };
+		BDC4E72F27BFECBE008FE807 /* MessageRelayServiceSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessageRelayServiceSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDC4E73127BFECBE008FE807 /* MessageRelayServiceSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRelayServiceSwiftTests.swift; sourceTree = "<group>"; };
+		BDEA30FA27860A530001CE9C /* MessageRelayService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MessageRelayService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDEA30FD27860A530001CE9C /* MessageRelayService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageRelayService.h; sourceTree = "<group>"; };
 		BDEA30FE27860A530001CE9C /* ProtoWireKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ProtoWireKit.docc; sourceTree = "<group>"; };
-		BDEA311827860ACC0001CE9C /* ProtoWireKitSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtoWireKitSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDEA311A27860ACC0001CE9C /* ProtoWireKitSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtoWireKitSwiftTests.swift; sourceTree = "<group>"; };
-		BDEA312427860DA30001CE9C /* PWKDispatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWKDispatcher.h; sourceTree = "<group>"; };
-		BDEA312527860DA30001CE9C /* PWKDispatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWKDispatcher.m; sourceTree = "<group>"; };
+		BDEA311827860ACC0001CE9C /* MessageRelayService22SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessageRelayService22SwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDEA312427860DA30001CE9C /* MRSDispatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRSDispatcher.h; sourceTree = "<group>"; };
+		BDEA312527860DA30001CE9C /* MRSDispatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRSDispatcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BDC4E72C27BFECBE008FE807 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDC4E73327BFECBE008FE807 /* MessageRelayService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BDEA30F727860A530001CE9C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,18 +64,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDEA311C27860ACC0001CE9C /* ProtoWireKit.framework in Frameworks */,
+				BDEA311C27860ACC0001CE9C /* MessageRelayService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BDC4E73027BFECBE008FE807 /* MessageRelayServiceSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDC4E73127BFECBE008FE807 /* MessageRelayServiceSwiftTests.swift */,
+			);
+			path = MessageRelayServiceSwiftTests;
+			sourceTree = "<group>";
+		};
 		BDEA30F027860A530001CE9C = {
 			isa = PBXGroup;
 			children = (
-				BDEA30FC27860A530001CE9C /* ProtoWireKit */,
-				BDEA311927860ACC0001CE9C /* ProtoWireKitSwiftTests */,
+				BDEA30FC27860A530001CE9C /* MessageRelayService */,
+				BDC4E73027BFECBE008FE807 /* MessageRelayServiceSwiftTests */,
 				BDEA30FB27860A530001CE9C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,29 +91,22 @@
 		BDEA30FB27860A530001CE9C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BDEA30FA27860A530001CE9C /* ProtoWireKit.framework */,
-				BDEA311827860ACC0001CE9C /* ProtoWireKitSwiftTests.xctest */,
+				BDEA30FA27860A530001CE9C /* MessageRelayService.framework */,
+				BDEA311827860ACC0001CE9C /* MessageRelayService22SwiftTests.xctest */,
+				BDC4E72F27BFECBE008FE807 /* MessageRelayServiceSwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BDEA30FC27860A530001CE9C /* ProtoWireKit */ = {
+		BDEA30FC27860A530001CE9C /* MessageRelayService */ = {
 			isa = PBXGroup;
 			children = (
-				BDEA30FD27860A530001CE9C /* ProtoWireKit.h */,
-				BDEA312427860DA30001CE9C /* PWKDispatcher.h */,
-				BDEA312527860DA30001CE9C /* PWKDispatcher.m */,
+				BDEA30FD27860A530001CE9C /* MessageRelayService.h */,
+				BDEA312427860DA30001CE9C /* MRSDispatcher.h */,
+				BDEA312527860DA30001CE9C /* MRSDispatcher.m */,
 				BDEA30FE27860A530001CE9C /* ProtoWireKit.docc */,
 			);
-			path = ProtoWireKit;
-			sourceTree = "<group>";
-		};
-		BDEA311927860ACC0001CE9C /* ProtoWireKitSwiftTests */ = {
-			isa = PBXGroup;
-			children = (
-				BDEA311A27860ACC0001CE9C /* ProtoWireKitSwiftTests.swift */,
-			);
-			path = ProtoWireKitSwiftTests;
+			path = MessageRelayService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,17 +116,35 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDEA312627860DA30001CE9C /* PWKDispatcher.h in Headers */,
-				BDEA310B27860A530001CE9C /* ProtoWireKit.h in Headers */,
+				BDEA312627860DA30001CE9C /* MRSDispatcher.h in Headers */,
+				BDEA310B27860A530001CE9C /* MessageRelayService.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		BDEA30F927860A530001CE9C /* ProtoWireKit */ = {
+		BDC4E72E27BFECBE008FE807 /* MessageRelayServiceSwiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BDEA310E27860A530001CE9C /* Build configuration list for PBXNativeTarget "ProtoWireKit" */;
+			buildConfigurationList = BDC4E73627BFECBE008FE807 /* Build configuration list for PBXNativeTarget "MessageRelayServiceSwiftTests" */;
+			buildPhases = (
+				BDC4E72B27BFECBE008FE807 /* Sources */,
+				BDC4E72C27BFECBE008FE807 /* Frameworks */,
+				BDC4E72D27BFECBE008FE807 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDC4E73527BFECBE008FE807 /* PBXTargetDependency */,
+			);
+			name = MessageRelayServiceSwiftTests;
+			productName = MessageRelayServiceSwiftTests;
+			productReference = BDC4E72F27BFECBE008FE807 /* MessageRelayServiceSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BDEA30F927860A530001CE9C /* MessageRelayService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDEA310E27860A530001CE9C /* Build configuration list for PBXNativeTarget "MessageRelayService" */;
 			buildPhases = (
 				BDEA30F527860A530001CE9C /* Headers */,
 				BDEA30F627860A530001CE9C /* Sources */,
@@ -119,14 +155,14 @@
 			);
 			dependencies = (
 			);
-			name = ProtoWireKit;
+			name = MessageRelayService;
 			productName = ProtoWireKit;
-			productReference = BDEA30FA27860A530001CE9C /* ProtoWireKit.framework */;
+			productReference = BDEA30FA27860A530001CE9C /* MessageRelayService.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BDEA311727860ACC0001CE9C /* ProtoWireKitSwiftTests */ = {
+		BDEA311727860ACC0001CE9C /* MessageRelayService22SwiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BDEA311F27860ACC0001CE9C /* Build configuration list for PBXNativeTarget "ProtoWireKitSwiftTests" */;
+			buildConfigurationList = BDEA311F27860ACC0001CE9C /* Build configuration list for PBXNativeTarget "MessageRelayService22SwiftTests" */;
 			buildPhases = (
 				BDEA311427860ACC0001CE9C /* Sources */,
 				BDEA311527860ACC0001CE9C /* Frameworks */,
@@ -137,9 +173,9 @@
 			dependencies = (
 				BDEA311E27860ACC0001CE9C /* PBXTargetDependency */,
 			);
-			name = ProtoWireKitSwiftTests;
+			name = MessageRelayService22SwiftTests;
 			productName = ProtoWireKitSwiftTests;
-			productReference = BDEA311827860ACC0001CE9C /* ProtoWireKitSwiftTests.xctest */;
+			productReference = BDEA311827860ACC0001CE9C /* MessageRelayService22SwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -152,6 +188,9 @@
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
+					BDC4E72E27BFECBE008FE807 = {
+						CreatedOnToolsVersion = 13.1;
+					};
 					BDEA30F927860A530001CE9C = {
 						CreatedOnToolsVersion = 13.1;
 					};
@@ -160,7 +199,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BDEA30F427860A530001CE9C /* Build configuration list for PBXProject "ProtoWireKit" */;
+			buildConfigurationList = BDEA30F427860A530001CE9C /* Build configuration list for PBXProject "MessageRelayService" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -173,13 +212,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BDEA30F927860A530001CE9C /* ProtoWireKit */,
-				BDEA311727860ACC0001CE9C /* ProtoWireKitSwiftTests */,
+				BDEA30F927860A530001CE9C /* MessageRelayService */,
+				BDEA311727860ACC0001CE9C /* MessageRelayService22SwiftTests */,
+				BDC4E72E27BFECBE008FE807 /* MessageRelayServiceSwiftTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BDC4E72D27BFECBE008FE807 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BDEA30F827860A530001CE9C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,12 +244,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BDC4E72B27BFECBE008FE807 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDC4E73227BFECBE008FE807 /* MessageRelayServiceSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BDEA30F627860A530001CE9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BDEA30FF27860A530001CE9C /* ProtoWireKit.docc in Sources */,
-				BDEA312727860DA30001CE9C /* PWKDispatcher.m in Sources */,
+				BDEA312727860DA30001CE9C /* MRSDispatcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,21 +265,71 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDEA311B27860ACC0001CE9C /* ProtoWireKitSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BDC4E73527BFECBE008FE807 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDEA30F927860A530001CE9C /* MessageRelayService */;
+			targetProxy = BDC4E73427BFECBE008FE807 /* PBXContainerItemProxy */;
+		};
 		BDEA311E27860ACC0001CE9C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BDEA30F927860A530001CE9C /* ProtoWireKit */;
+			target = BDEA30F927860A530001CE9C /* MessageRelayService */;
 			targetProxy = BDEA311D27860ACC0001CE9C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		BDC4E73727BFECBE008FE807 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HDQPY5LML8;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nadohs-software.MessageRelayServiceSwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDC4E73827BFECBE008FE807 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HDQPY5LML8;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nadohs-software.MessageRelayServiceSwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		BDEA310C27860A530001CE9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -446,7 +551,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BDEA30F427860A530001CE9C /* Build configuration list for PBXProject "ProtoWireKit" */ = {
+		BDC4E73627BFECBE008FE807 /* Build configuration list for PBXNativeTarget "MessageRelayServiceSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDC4E73727BFECBE008FE807 /* Debug */,
+				BDC4E73827BFECBE008FE807 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDEA30F427860A530001CE9C /* Build configuration list for PBXProject "MessageRelayService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BDEA310C27860A530001CE9C /* Debug */,
@@ -455,7 +569,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BDEA310E27860A530001CE9C /* Build configuration list for PBXNativeTarget "ProtoWireKit" */ = {
+		BDEA310E27860A530001CE9C /* Build configuration list for PBXNativeTarget "MessageRelayService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BDEA310F27860A530001CE9C /* Debug */,
@@ -464,7 +578,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BDEA311F27860ACC0001CE9C /* Build configuration list for PBXNativeTarget "ProtoWireKitSwiftTests" */ = {
+		BDEA311F27860ACC0001CE9C /* Build configuration list for PBXNativeTarget "MessageRelayService22SwiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BDEA312027860ACC0001CE9C /* Debug */,

@@ -5,13 +5,13 @@
 //  Created by Richard Fox on 1/5/22.
 //
 
-#import "PWKDispatcher.h"
-@interface PWKListWrapper: NSObject
+#import "MRSDispatcher.h"
+@interface MRSListWrapper: NSObject
 @property (nonatomic, weak, readonly) id target;
 -(id)initWithWeakItem:(id)target;
 @end
 
-@implementation PWKListWrapper
+@implementation MRSListWrapper
 
 -(id)initWithWeakItem:(id)target{
     if (self = [super init]) {
@@ -21,11 +21,11 @@
 }
 @end
 
-@interface PWKDispatcher()
-@property (nonatomic) NSMutableArray<PWKListWrapper *> *targets;
+@interface MRSDispatcher()
+@property (nonatomic) NSMutableArray<MRSListWrapper *> *targets;
 @end
 
-@implementation PWKDispatcher
+@implementation MRSDispatcher
 
 - (instancetype)init {
     if (self = [super init]) {
@@ -44,7 +44,7 @@
 }
 
 -(void)addListener:(NSObject *)target {
-    for (PWKListWrapper *wrapper in self.targets) {
+    for (MRSListWrapper *wrapper in self.targets) {
         //clean-up targets which were released from memory.
         if (wrapper.target == nil) {
             [_targets removeObject:wrapper];
@@ -53,12 +53,12 @@
             return;
         }
     }
-    PWKListWrapper *wrapped = [[PWKListWrapper alloc] initWithWeakItem:target];
+    MRSListWrapper *wrapped = [[MRSListWrapper alloc] initWithWeakItem:target];
     [_targets addObject:wrapped];
 }
 
 - (void)removeListener:(NSObject *)target {
-    for (PWKListWrapper *wrapper in self.targets) {
+    for (MRSListWrapper *wrapper in self.targets) {
         //clean-up targets which were released from memory.
         if (wrapper.target == nil) {
             [_targets removeObject:wrapper];
@@ -71,7 +71,7 @@
 }
 
 -(BOOL)respondsToSelector:(SEL)aSelector {
-    for (PWKListWrapper *item in self.targets) {
+    for (MRSListWrapper *item in self.targets) {
         if ([item.target respondsToSelector:aSelector]) {
             return YES;
         }
@@ -80,7 +80,7 @@
 }
 
 -(NSMethodSignature *)methodSignatureForSelector:(SEL)sel {
-    for (PWKListWrapper *item in self.targets) {
+    for (MRSListWrapper *item in self.targets) {
         id result = [item.target methodSignatureForSelector:sel];
         if (result) {
             return result;
@@ -94,7 +94,7 @@
 }
 
 - (void)forwardInvocation:(NSInvocation *)anInvocation {
-    for (PWKListWrapper *item in self.targets) {
+    for (MRSListWrapper *item in self.targets) {
         if ([item.target respondsToSelector:anInvocation.selector])
         {
             // cannot call copy on `anInvocation` or crash time!

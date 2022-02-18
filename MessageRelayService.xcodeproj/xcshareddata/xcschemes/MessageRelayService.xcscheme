@@ -8,16 +8,16 @@
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BDEA311727860ACC0001CE9C"
-               BuildableName = "ProtoWireKitSwiftTests.xctest"
-               BlueprintName = "ProtoWireKitSwiftTests"
-               ReferencedContainer = "container:ProtoWireKit.xcodeproj">
+               BlueprintIdentifier = "BDEA30F927860A530001CE9C"
+               BuildableName = "MessageRelayService.framework"
+               BlueprintName = "MessageRelayService"
+               ReferencedContainer = "container:MessageRelayService.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,16 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BDEA311727860ACC0001CE9C"
-               BuildableName = "ProtoWireKitSwiftTests.xctest"
-               BlueprintName = "ProtoWireKitSwiftTests"
-               ReferencedContainer = "container:ProtoWireKit.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -57,6 +47,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "BDEA30F927860A530001CE9C"
+            BuildableName = "MessageRelayService.framework"
+            BlueprintName = "MessageRelayService"
+            ReferencedContainer = "container:MessageRelayService.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

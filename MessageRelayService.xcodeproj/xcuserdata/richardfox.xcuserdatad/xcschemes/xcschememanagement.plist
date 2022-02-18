@@ -4,19 +4,29 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ProtoWireKit.xcscheme_^#shared#^_</key>
+		<key>MessageRelayService.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>ProtoWireKitSwiftTests.xcscheme_^#shared#^_</key>
+		<key>MessageRelayServiceSwiftTests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>BDC4E72E27BFECBE008FE807</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BDEA30F927860A530001CE9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>BDEA311727860ACC0001CE9C</key>
 		<dict>
 			<key>primary</key>

@@ -9,14 +9,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PWKDispatcher <T>: NSObject
+@interface MRSDispatcher <T>: NSObject
 
 @property (nonatomic, readonly) T targetReciever;
 
 - (void)addListener:(T)target;
 - (void)removeListener:(T)target;
-
-//@property (nonatomic, strong) NSObject <Any *>
 
 @end
 
